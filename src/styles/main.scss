@@ -1,0 +1,112 @@
+$main-font: 'Life Savers', cursive;
+$quote-font: 'Inconsolata', monospace;
+
+#github {
+  display: flex;
+  justify-content: center;
+
+  font-family: $quote-font;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  a {
+    color: hotpink;
+    text-decoration: none;
+  }
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+#quote-box {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  background: linear-gradient(to bottom, rgba(31, 162, 255, 0.6), rgba(18, 216, 250, 0.5), rgba(166, 255, 203, 0.6));
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2rem;
+  border-color: grey;
+
+  box-shadow: -20px 10px 5px darkgrey;
+
+  width: 40rem;
+  height: 20rem;
+
+  margin-top: 5rem;
+
+  h3 {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    text-align: center;
+
+    color: lightyellow;
+    grid-column: 1 / 4;
+
+    cursor: default;
+  }
+
+    #text {
+    font-family: $quote-font;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+
+    grid-column: 1 / 4;
+    margin-left: 2rem;
+
+    cursor: default;
+
+  }
+
+    #author {
+    font-family: $quote-font;
+    font-size: 1.1rem;
+
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+
+    cursor: default;
+  }
+
+    #new-quote {
+    font-family: $main-font;
+    font-weight: bold;
+
+    background-color: white;
+
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+    width: 8rem;
+    height: 3rem;
+
+    border-style: none;
+    border-radius: 1rem;
+
+      &:hover {
+        background-color: lightyellow;
+        cursor: pointer;
+      }
+      &:active {
+        transform: translateY(5px)
+      }
+  }
+
+    #tweet-quote {
+    font-family: $main-font;
+    font-weight: bold;
+
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    }
+
+    #twitter-icon {
+      width: 5rem;
+      height: 5rem;
+    }
+}
